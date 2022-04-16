@@ -9,5 +9,8 @@ export const commonConfig: Configuration = {
         loader: 'babel-loader',
       }
     ]
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.jsx', '.js'],
   }
 };

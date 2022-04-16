@@ -7,7 +7,8 @@
     "build": "npm run build:types && npm run build:js",
     "build:types": "tsc --emitDeclarationOnly",
     "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
-    "build:dev": "webpack --config webpack.dev.ts"
+    "build:dev": "webpack --config config/webpack.dev.ts",
+    "dev": "webpack serve --config config/webpack.dev.ts"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
